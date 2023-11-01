@@ -27,7 +27,8 @@ class MyHomePage extends StatelessWidget {
         title: const Text(
           'Shopping List',
         ),
-      ),
+        backgroundColor: Colors.indigo,
+      ), 
       body: SingleChildScrollView(
         // Widget wrapper yang dapat discroll
         child: Padding(
