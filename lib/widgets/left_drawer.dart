@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:shopping_list/screens/menu.dart';
 import 'package:shopping_list/screens/shoplist_form.dart';
+import 'package:shopping_list/screens/list_product.dart';
 
 class LeftDrawer extends StatelessWidget {
   const LeftDrawer({super.key});
@@ -62,6 +63,18 @@ class LeftDrawer extends StatelessWidget {
                 context,
                 MaterialPageRoute(
                   builder: (context) => ShopFormPage(),
+                ));
+          },
+          ),
+          ListTile(
+          leading: const Icon(Icons.checklist),
+          title: const Text('Lihat Produk'),
+          // Bagian redirection ke MyHomePage
+          onTap: () {
+            Navigator.pushReplacement(
+                context,
+                MaterialPageRoute(
+                  builder: (context) => ProductPage(),
                 ));
           },
           ),
